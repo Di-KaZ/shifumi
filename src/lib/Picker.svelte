@@ -11,7 +11,7 @@
 </script>
 
 <div class="grid grid-rows-3 grid-cols-1">
-    <button class={clsx("text-2xl", "md:text-3xl","lg:text-9xl","transition-opacity", {"opacity-0": $vote[player] && !moveSelected(Moves.ROCK)})} on:click={() => voteForPlayer(player, Moves.ROCK)}>🪨</button>
-    <button class={clsx("text-2xl", "md:text-3xl","lg:text-9xl","transition-opacity", {"opacity-0": $vote[player] && !moveSelected(Moves.PAPER)})} on:click={() => voteForPlayer(player, Moves.PAPER)}>🤚</button>
-    <button class={clsx("text-2xl", "md:text-3xl","lg:text-9xl","transition-opacity", {"opacity-0": $vote[player] && !moveSelected(Moves.SCISSORS)})} on:click={() => voteForPlayer(player, Moves.SCISSORS)}>✂️</button>
+    <button class={clsx("md:text-6xl","lg:text-9xl","transition-opacity", {"opacity-0": $vote[player] && !moveSelected(Moves.ROCK)})} on:click={() => voteForPlayer(player, Moves.ROCK)}>🪨</button>
+    <button class={clsx("md:text-6xl","lg:text-9xl","transition-opacity", {"opacity-0": $vote[player] && !moveSelected(Moves.PAPER)})} on:click={() => voteForPlayer(player, Moves.PAPER)}>🤚</button>
+    <button class={clsx("md:text-6xl","lg:text-9xl","transition-opacity", {"opacity-0": $vote[player] && !moveSelected(Moves.SCISSORS)})} on:click={() => voteForPlayer(player, Moves.SCISSORS)}>✂️</button>
 </div>
